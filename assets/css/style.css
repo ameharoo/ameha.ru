@@ -82,7 +82,7 @@ html, body {
     height: 40px;
     display: inline-flex;
     background: #212121;
-    border: 2px solid white;
+    border: 1px solid #212121;
     border-radius: 5px;
     overflow: hidden;
     /* top: -3px;
@@ -198,10 +198,7 @@ html, body {
 }
 
 
-/* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
 @media only screen and (max-width : 1024px) {
-/* стили */
-
     html, body {
         height: 100%;
     }
@@ -244,7 +241,7 @@ html, body {
     }
 }
 
-/* Большие экраны ----------- */
+
 @media only screen  and (min-width: 1824px) {
     body{
         display: flex;
