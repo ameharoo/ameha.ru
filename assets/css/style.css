@@ -11,35 +11,47 @@ html, body {
     height: 100%;
     background-color: #212121;
     background: rgb(33,33,33);
-    background: linear-gradient(0deg, rgba(33,33,33,1) 0%, rgba(66,66,66,1) 100%);
+    background: linear-gradient(0deg, rgba(33,33,33,1) 0%, rgba(66,66,66,1) 100%); 
+}
+
+#overlay-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    color:white;
+    color:#E0E0E0;
 }
 
 
 .container.second {
-    margin-top: 150px;
+    flex: 1;
+    justify-content: center;
+    padding: 15px;
+    margin-bottom: 30px;
     font-weight: lighter;
     font-size: xx-large;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:white;
-    width: 100%;
+    color:#E0E0E0;
+    /* background: #212121; */
+    width: fit-content;
 }
 
 .container.main {
     margin: 0;
-    padding: 150px;
-    height: calc(100% - 300px);
-    justify-content: space-around;
+    padding: 0;
+    height: 100%;
+    width: 100%;
     align-items: center;
+    justify-content: space-between;
+    z-index: 9;
 }
 
 .pronounce{
-    color: #E0E0E0;
+    color: #BDBDBD;
     font-size: medium;
 }
 
@@ -75,6 +87,31 @@ html, body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: end;
+}
+.nav a {
+    margin: 15px;
+    color: white;
+    text-transform: lowercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5em;
+    transition-duration: 0.5s;
+}
+.nav a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #EC407A;
+    text-decoration: none;
 }
 
 .work{
@@ -130,12 +167,14 @@ html, body {
 
 
 .swiffy-slider {
-    margin-top: 50px;
+    /* margin-top: 50px; */
+    overflow: hidden;
 }
 
 .card {
+    /* margin: 1em; */
     height: 200px;
-    padding:1em;
+    /* padding:1em; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #212121;
     display: flex;
@@ -146,15 +185,18 @@ html, body {
 
 .card .header {
     text-transform: uppercase;
+    padding: 0px 15px 0;
 }
 
 .card p {
     flex: 1;
+    padding: 0px 15px 0;
 }
 
 .card .links {
-    width: 100%;
+    width: calc(100% - 30px);
     padding-bottom: 10px;
+    padding: 0px 15px 15px;
     display: flex;
     flex-direction: row;
     justify-content: end;
@@ -167,6 +209,8 @@ html, body {
     cursor: pointer;
     text-decoration: none;
     color: white;
+    transition-duration: 0.5s;
+    font-size: 20px;
 }
 .card .links a:visited {
     color: white;
@@ -179,7 +223,7 @@ html, body {
 }
 
 .card .links a:hover {
-    color: #B3E5FC;
+    color: #EC407A;
 }
 
 .card .links a .material-icons {
@@ -193,7 +237,7 @@ html, body {
 }
 
 .status.in-progress::after{
-    color: #B3E5FC;
+    color: #EC407A;
     content: "in-progress";
 }
 
@@ -204,19 +248,23 @@ html, body {
     }
 
     .container {
-        justify-content: start !important;
+        /* justify-content: start !important; */
     }
 
     .container.main {
-        padding: 50px;
-        height: calc(100% - 100px);
+        height: calc(100%);
     }
 
     .container.second {
-        flex: 1;
-        margin-top: 0;
-        padding: 15px;
-        font-size:medium;
+        font-size: 1.3em;
+    }
+
+    .swiffy-slider {
+        width: 100%;
+    }
+
+    .slider-container{
+        /* overflow: visible !important; */
     }
 
     .container.second h1 {

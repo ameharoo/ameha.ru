@@ -3,32 +3,35 @@
     <head>
         <title>It's me</title>  
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="/assets/js/main.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.4.1/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
         <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.4.1/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">       
         <link href="/assets/css/style.css" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+        <script src="https://kit.fontawesome.com/6df9290f7d.js" crossorigin="anonymous"></script>
     <body>
+        <!-- <canvas id="overlay-canvas">
+            Your browser doesn't appear to support the HTML5 <code>&lt;canvas&gt;</code> element.
+        </canvas> -->
         <div class="container main">
             
             <div class="container second">
                 <h2>
-                    Hello!&nbsp;It's&nbsp;me, Akhmetova&nbsp;Veronika; <span class="pronounce">(she/her)</span>
+                    Akhmetova&nbsp;Veronika; <span class="pronounce">(she/her)</span>
                 </h2>
                 <h1>
                     <span class="frontend">Frontend</span>&nbsp;/&nbsp;<span class="backend">Backend</span> <span class="desktop">developer</span>
                 </h1>
-                <div class="hire-block">
-                    <h4>
-                        I code with <span class="backend">php/python</span> + <span class="frontend">vue.js</span> & I&nbsp;can&nbsp;work&nbsp;for 
-                    </h4>
-                    <div class="work">
-                        <input disabled type="text" value="you" />
-                        <a href="https://t.me/ameharu">Hire me</a>
-                    </div>
+                <h4>
+                    I code with <span class="backend">php/python</span> + <span class="frontend">vue.js</span>
+                </h4>
+                <div class="nav">
+                    <a href="https://t.me/ameharu"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://github.com/ameharoo"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://gitlab.com/harunya"><i class="fa-brands fa-gitlab"></i></a>
                 </div>
 
             </div>
-            <div class="swiffy-slider slider-item-show4 slider-nav-sm slider-nav-page slider-item-snapstart slider-item-nogap slider-nav-round slider-indicators-sm slider-indicators-outside slider-indicators-round slider-nav-animation slider-nav-animation-slideup slider-item-first-visible">
+            <div class="swiffy-slider slider-item-snapstart slider-item-reveal slider-item-show4 slider-nav-chevron slider-nav-sm slider-nav-autoplay slider-nav-autopause slider-indicators-round slider-indicators-outside slider-nav-animation slider-nav-animation-appear slider-nav-animation-fast">
                 <div class="slider-container">
                     <div class="card">
                         <h3 class="header">khawasu: Web interface&nbsp;<span class="status in-progress"></span></h3>
@@ -36,7 +39,7 @@
                             Web app written in <span class="frontend">vue.js</span>&<span class="backend">python</span> for interactive use in smart home system;
                         </p>
                         <div class="links">
-                            <a href="https://github.com/ameharoo/khawasu-web"><span class="material-icons">link</span> <span class="name">Github</span></a>
+                            <a href="https://github.com/ameharoo/khawasu-web"><i class="fa-brands fa-github"></i></a>
                         </div>
                         
                     </div>
@@ -44,10 +47,6 @@
             
                 <button type="button" class="slider-nav" aria-label="Go left"></button>
                 <button type="button" class="slider-nav slider-nav-next" aria-label="Go left"></button>
-            
-                <div class="slider-indicators d-md-none">
-                    <button class="active" aria-label="Go to slide"></button>
-                </div>
             </div>
         </div>
     </body>
