@@ -63,14 +63,14 @@ header .top-nav .nav {
     transition-duration: 2s;
 }
 
-header .top-nav .nav a {
+a {
     text-decoration: none;
     color: rgba(255, 255, 255, 70%);
     font-weight: 300;
     margin-right: 22px;
 }
 
-header .top-nav .nav a:hover {
+a:hover {
     text-decoration: none;
     color: white;
     margin-right: 22px;
