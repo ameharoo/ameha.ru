@@ -6,71 +6,73 @@
         <script src="/assets/js/main.js"></script>  
         <link href="/assets/css/style.css" rel="stylesheet" />
     <body>
-        <div class="header-bg"></div>
-        <header>
-            <div class="top-nav">
-                <input type="checkbox" id="menu_open" />
+        <div class="page-wrapper">
+            <div class="header-bg"></div>
+            <header>
+                <div class="top-nav">
+                    <input type="checkbox" id="menu_open" />
 
-                <div class="nav">
-                    <a href="https://t.me/harudasmadchen">Telegram blog</a>
-                    <a href="https://vk.com/">VK legacy account</a>
-                    <a href="http://home.ameha.ru:8080">Web Home</a>
+                    <div class="nav">
+                        <a href="https://t.me/harudasmadchen">Telegram blog</a>
+                        <a href="https://vk.com/">VK legacy account</a>
+                        <a href="http://home.ameha.ru:8080">Web Home</a>
+                    </div>
+                    <div class="language-picker">
+                        <img class="language-icon" src="assets/images/langs/en.png" />
+                        <label>English</label>
+                        <input type="checkbox" class="more" />
+                        <div class="language-list">
+                            <a href="?lang=ru"><img class="language-icon" src="assets/images/langs/ru.png" /> Russian</a>
+                            <a href="?lang=uk"><img class="language-icon" src="assets/images/langs/uk.png" /> Ukrainian</a>
+                            <a href="?lang=jp"><img class="language-icon" src="assets/images/langs/jp.png" /> Japanese</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="language-picker">
-                    <img class="language-icon" src="assets/images/langs/en.png" />
-                    <label>English</label>
-                    <input type="checkbox" class="more" />
-                    <div class="language-list">
-                        <a href="?lang=ru"><img class="language-icon" src="assets/images/langs/ru.png" /> Russian</a>
-                        <a href="?lang=uk"><img class="language-icon" src="assets/images/langs/uk.png" /> Ukrainian</a>
-                        <a href="?lang=jp"><img class="language-icon" src="assets/images/langs/jp.png" /> Japanese</a>
+                <div class="profile">
+                    <div class="main-info">
+                        <img class="profile-image" src="/assets/images/avatar.jpg" />
+                        <div class="profile-info">
+                            <h1>Nika Tumanova</h1>
+                            <span class="username">@ameharu</span>
+                            <span class="usertitle">PHP-Fullstack developer</span>
+                            <span class="usertitle">Python enjoyer</span>
+                            <span class="usertitle">C++ Enthusiast</span>   
+                        </div>
+                    </div>
+                    <div class="contacts">
+                        <a href="https://t.me/ameharu">
+                            <div class="contact">
+                                <img class="contact-icon" src="/assets/images/tg.png"/>
+                                <label>@ameharu</label>
+                            </div>
+                        </a>
+                        <a href="https://t.me/ameharu">
+                            <div class="contact">
+                                <img class="contact-icon" src="/assets/images/gh.png"/>
+                                <label>@ameharoo</label>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <div class="content">
+                <div class="project">
+                    <h2>Webtail</h2>
+                    <p>Web interface for Khawasu</p>
+                    <div class="project-tags">
+                        <span>js</span>
+                        <span>vue.js</span>
+                        <span>python3</span>
+                        <span>flask</span>
+                    </div>
+                    <div class="links">
+                        <a href="https://github.com/khawasu/webtail">Github</a>
                     </div>
                 </div>
             </div>
-            <div class="profile">
-                <div class="main-info">
-                    <img class="profile-image" src="/assets/images/avatar.jpg" />
-                    <div class="profile-info">
-                        <h1>Nika Tumanova</h1>
-                        <span class="username">@ameharu</span>
-                        <span class="usertitle">PHP-Fullstack developer</span>
-                        <span class="usertitle">Python enjoyer</span>
-                        <span class="usertitle">C++ Enthusiast</span>   
-                    </div>
-                </div>
-                <div class="contacts">
-                    <a href="https://t.me/ameharu">
-                        <div class="contact">
-                            <img class="contact-icon" src="/assets/images/tg.png"/>
-                            <label>@ameharu</label>
-                        </div>
-                    </a>
-                    <a href="https://t.me/ameharu">
-                        <div class="contact">
-                            <img class="contact-icon" src="/assets/images/gh.png"/>
-                            <label>@ameharoo</label>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </header>
-        <div class="content">
-            <div class="project">
-                <h2>Webtail</h2>
-                <p>Web interface for Khawasu</p>
-                <div class="project-tags">
-                    <span>js</span>
-                    <span>vue.js</span>
-                    <span>python3</span>
-                    <span>flask</span>
-                </div>
-                <div class="links">
-                    <a href="https://github.com/khawasu/webtail">Github</a>
-                </div>
-            </div>
+            <footer>
+                2022 Haru still baka <!-- [You too :>] -->
+            </footer>
         </div>
-        <footer>
-            2022 Haru still baka <!-- [You too :>] -->
-        </footer>
     </body>
 </html>
