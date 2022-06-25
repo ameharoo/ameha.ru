@@ -377,7 +377,7 @@ footer {
 
 }
 
-@media (min-height: 800px) {
+@media (min-height: 844px) {
     html, body, .page-wrapper{
         height: 100%;
     }
