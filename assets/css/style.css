@@ -1,3 +1,7 @@
+/*
+    Design for Mobile from the Start
+*/
+
 @font-face {
     font-family: 'Montserrat';
     src: url('/assets/font/montserrat/Montserrat-VariableFont_wght.ttf');
@@ -222,12 +226,14 @@ header .profile .contacts .contact label {
 
 .content {
     flex: 1;
-    margin-left: 54px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     margin-top: 50px;
 }
 
 .content .project {
-    margin-right: 50px;
     max-width: 277px;
     max-height: 318px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -238,12 +244,13 @@ header .profile .contacts .contact label {
     padding: 36px;
     padding-top: 22px;
     padding-bottom: 22px;
+    margin-bottom: 50px;
 }
 
 .content .project h2 {
     font-weight: 500;
     font-size: 24px;
-    color: #FF6565;
+    color: white;
     margin: 0;
     padding: 0;
     margin-bottom: 24px;
@@ -253,18 +260,34 @@ header .profile .contacts .contact label {
     font-weight: 400;
     font-size: 20px;
     flex: 1;
+    color: #CFCFCF;
 }
 
 .content .project .project-tags {
     font-weight: 500;
     font-size: 16px;
-    color: rgba(255, 255, 255, 0.7);
+    color: #CFCFCF;
     margin-bottom: 9px;
+    display: flex;
+}
+
+.content .project .project-tags span::after {
+    content: ',';
+    text-align: left;
+    display: inline-block;
+    width: 10px;
+}
+.content .project .project-tags span {
+    display: flex;
+}
+
+.content .project .project-tags span:last-child::after {
+    content: unset;
 }
 
 .content .project .links a {
     color: rgba(255, 255, 255, 0.7);
-    text-decoration: none;
+    text-decoration: underline;
     margin-right: 5px;
     font-weight: 500;
     font-size: 20px;
@@ -272,7 +295,7 @@ header .profile .contacts .contact label {
 
 
 footer {
-    margin-top: 10px;
+    margin-top: 25px;
     margin-left: 32px;
     margin-bottom: 29px;
     font-size: 16px;
@@ -332,7 +355,7 @@ footer {
 
 }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
     header .profile .main-info {
         flex-direction: row;
     }
@@ -371,6 +394,9 @@ footer {
 
 }
 
+
+
+/* Desktop */
 @media (min-width: 1120px) {
     .page-wrapper {
         max-width: 1120px;
@@ -378,8 +404,30 @@ footer {
 
 }
 
-@media (min-height: 844px) {
-    html, body, .page-wrapper{
+/* Tablet */
+@media (min-width: 844px) {
+    .content {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-left: 54px;
+        align-items: stretch;
+        justify-content: center;
+    }
+    .content .project {
+        margin-right: 50px;
+        margin-bottom: unset;
+        max-height: unset;
         height: 100%;
+    }
+}
+
+@media (min-height: 844px) and (min-width: 844px) {
+    /* html, body, .page-wrapper{
+        height: 100%;
+    } */
+
+    footer {
+        position: absolute;
+        bottom: 0;
     }
 }
