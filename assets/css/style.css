@@ -260,6 +260,7 @@ header .profile .contacts .contact label {
     font-weight: 400;
     font-size: 20px;
     flex: 1;
+    margin-top: 0;
     color: #CFCFCF;
 }
 
@@ -421,7 +422,7 @@ footer {
     }
 }
 
-@media (min-height: 844px) and (min-width: 844px) {
+@media (min-height: 844px) and (min -width: 844px) {
     /* html, body, .page-wrapper{
         height: 100%;
     } */
