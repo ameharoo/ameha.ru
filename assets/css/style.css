@@ -422,7 +422,7 @@ footer {
     }
 }
 
-@media (min-height: 844px) and (min -width: 844px) {
+@media (min-height: 844px) and (min-width: 844px) {
     /* html, body, .page-wrapper{
         height: 100%;
     } */
