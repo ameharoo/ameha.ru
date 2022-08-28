@@ -416,7 +416,7 @@ footer {
         margin-right: 50px;
         margin-bottom: unset;
         max-height: unset;
-        height: 100%;
+        height: auto;
     }
     header .profile {
         margin-left: 71px;
