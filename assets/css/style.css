@@ -42,7 +42,6 @@ header {
     background-size: cover;
     background-position: center;
     background-size: cover;
-    filter: blur(15px);
     position: absolute;
     top: 0;
     left: 0;
@@ -153,8 +152,6 @@ header .profile {
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 64px;
-    margin-left: 71px;
-    margin-right: 71px;
 }
 
 header .profile .main-info {
@@ -228,9 +225,9 @@ header .profile .contacts .contact label {
     flex: 1;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     margin-top: 50px;
+    justify-content: center;
 }
 
 .content .project {
@@ -241,15 +238,15 @@ header .profile .contacts .contact label {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    padding: 36px;
-    padding-top: 22px;
-    padding-bottom: 22px;
-    margin-bottom: 50px;
+    padding: 15px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    margin: 15px;
 }
 
 .content .project h2 {
     font-weight: 500;
-    font-size: 24px;
+    font-size: 20px;
     color: white;
     margin: 0;
     padding: 0;
@@ -258,7 +255,7 @@ header .profile .contacts .contact label {
 
 .content .project p {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     flex: 1;
     margin-top: 0;
     color: #CFCFCF;
@@ -266,7 +263,7 @@ header .profile .contacts .contact label {
 
 .content .project .project-tags {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 12px;
     color: #CFCFCF;
     margin-bottom: 9px;
     display: flex;
@@ -291,7 +288,7 @@ header .profile .contacts .contact label {
     text-decoration: underline;
     margin-right: 5px;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 
@@ -403,22 +400,27 @@ footer {
         max-width: 1120px;
     }
 
+    .content {
+        margin-left: 54px;
+    }
+
 }
 
 /* Tablet */
 @media (min-width: 844px) {
     .content {
-        flex-direction: row;
-        align-items: flex-start;
-        margin-left: 54px;
+        justify-content: flex-start;
         align-items: stretch;
-        justify-content: center;
     }
     .content .project {
         margin-right: 50px;
         margin-bottom: unset;
         max-height: unset;
         height: 100%;
+    }
+    header .profile {
+        margin-left: 71px;
+        margin-right: 71px;
     }
 }
 
@@ -430,5 +432,27 @@ footer {
     footer {
         position: absolute;
         bottom: 0;
+    }
+}
+
+@media (min-width: 320px){
+    .content .project .links a {
+        font-size: 20px;
+    }
+
+    .content .project {
+        padding: 36px;
+    }
+
+    .content .project h2 {
+        font-size: 24px;
+    }
+
+    .content .project p {
+        font-size: 20px;
+    }
+
+    .content .project .project-tags {
+        font-size: 16px;
     }
 }
